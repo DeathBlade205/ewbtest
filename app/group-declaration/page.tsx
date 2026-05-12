@@ -1,3 +1,6 @@
+import SectionHero from '@/components/SectionHero'
+import ScrollReveal from '@/components/ScrollReveal'
+
 export default function GroupDeclaration() {
   const members = [
     {
@@ -27,37 +30,45 @@ export default function GroupDeclaration() {
   ]
 
   return (
-    <div className="prose">
-      <p className="text-xs font-semibold uppercase tracking-widest text-[#2e7d52] mb-1">Group Declaration</p>
-      <h1 className="text-3xl font-bold text-[#1a4731] mb-6">Group Declaration</h1>
+    <div>
+      <SectionHero title="Group Declaration" subtitle="Individual contributions and academic integrity declaration for One Prompt Wonders." />
+      <div className="px-8 md:px-16 py-12 max-w-3xl">
+        <div className="prose">
+          <ScrollReveal>
+            <p className="text-sm" style={{ color: 'var(--ink-muted)' }}>
+              The following table declares each group member's individual contribution to this project. All members confirm that the work submitted is their own, that any use of AI tools has been disclosed in Appendix C, and that all sources are cited in accordance with APA 7th edition referencing guidelines.
+            </p>
+          </ScrollReveal>
 
-      <p className="text-sm text-gray-600 mb-8">
-        The following table declares each group member's individual contribution to this project. All members confirm that the work submitted is their own, that any use of AI tools has been disclosed in Appendix C, and that all sources are cited in accordance with APA 7th edition referencing guidelines.
-      </p>
+          <ScrollReveal delay={0.06}>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Contribution</th>
+                </tr>
+              </thead>
+              <tbody>
+                {members.map(m => (
+                  <tr key={m.name}>
+                    <td className="font-semibold whitespace-nowrap">{m.name}</td>
+                    <td>{m.contribution}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </ScrollReveal>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Contribution</th>
-          </tr>
-        </thead>
-        <tbody>
-          {members.map(m => (
-            <tr key={m.name}>
-              <td className="font-semibold whitespace-nowrap">{m.name}</td>
-              <td>{m.contribution}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-
-      <div className="infobox mt-8">
-        <p className="text-sm font-semibold text-[#145c3e] mb-1">Group: One Prompt Wonders</p>
-        <p className="text-sm text-gray-600">
-          31265 Computing and Information Technology Practice — Assessment Task 3<br />
-          EWB Challenge 2025: Lama Lama Country
-        </p>
+          <ScrollReveal delay={0.1}>
+            <div className="infobox mt-8">
+              <p className="text-sm font-semibold mb-1" style={{ color: 'var(--pine)' }}>Group: One Prompt Wonders</p>
+              <p className="text-sm" style={{ color: 'var(--ink-muted)' }}>
+                31265 Computing and Information Technology Practice — Assessment Task 3<br />
+                EWB Challenge 2025: Lama Lama Country
+              </p>
+            </div>
+          </ScrollReveal>
+        </div>
       </div>
     </div>
   )

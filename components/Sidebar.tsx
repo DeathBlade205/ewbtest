@@ -2,55 +2,87 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { motion } from 'framer-motion'
 
 const NAV = [
-  { href: '/acknowledgement',     label: 'Acknowledgement' },
-  { href: '/group-declaration',   label: 'Group Declaration' },
-  { href: '/',                    label: 'Executive Summary' },
-  { href: '/background',          label: '1. Background' },
-  { href: '/problem',             label: '2. Problem Description',
-    sub: [{ href: '/problem#design-criteria', label: '2.1 Design Criteria' }] },
-  { href: '/design-options',      label: '3. Design Options' },
-  { href: '/design-selection',    label: '4. Design Selection' },
-  { href: '/detailed-design',     label: '5. Detailed Design' },
-  { href: '/prototyping',         label: '6. Prototyping' },
-  { href: '/implementation',      label: '7. Implementation Plan' },
-  { href: '/cost-analysis',       label: '8. Cost Analysis' },
-  { href: '/other-considerations',label: '9. Other Considerations' },
-  { href: '/recommendations',     label: '10. Recommendations' },
-  { href: '/references',          label: 'References' },
-  { href: '/appendices',          label: 'Appendices' },
-] as const
+  { href: '/acknowledgement',     label: 'Acknowledgement',       num: null },
+  { href: '/group-declaration',   label: 'Group Declaration',     num: null },
+  { href: '/',                    label: 'Executive Summary',     num: null },
+  { href: '/background',          label: 'Background',            num: '01' },
+  { href: '/problem',             label: 'Problem Description',   num: '02' },
+  { href: '/design-options',      label: 'Design Options',        num: '03' },
+  { href: '/design-selection',    label: 'Design Selection',      num: '04' },
+  { href: '/detailed-design',     label: 'Detailed Design',       num: '05' },
+  { href: '/prototyping',         label: 'Prototyping',           num: '06' },
+  { href: '/implementation',      label: 'Implementation',        num: '07' },
+  { href: '/cost-analysis',       label: 'Cost Analysis',         num: '08' },
+  { href: '/other-considerations',label: 'Other Considerations',  num: '09' },
+  { href: '/recommendations',     label: 'Recommendations',       num: '10' },
+  { href: '/references',          label: 'References',            num: null },
+  { href: '/appendices',          label: 'Appendices',            num: null },
+]
 
 export default function Sidebar() {
   const pathname = usePathname()
 
   return (
-    <aside className="hidden md:flex flex-col w-56 shrink-0 border-r border-gray-200 bg-white pt-6 pb-10 overflow-y-auto sticky top-[52px] h-[calc(100vh-52px)]">
-      <p className="px-4 mb-3 text-[0.6rem] font-semibold uppercase tracking-widest text-gray-400">
-        Contents
-      </p>
-      <nav className="flex flex-col gap-0.5">
-        {NAV.map(({ href, label, ...rest }) => {
-          const sub = (rest as { sub?: { href: string; label: string }[] }).sub
+    <aside
+      className="hidden md:flex flex-col w-52 shrink-0 sticky overflow-y-auto"
+      style={{
+        top: 52,
+        height: 'calc(100vh - 52px)',
+        background: 'var(--surface)',
+        borderRight: '1px solid var(--border)',
+      }}
+    >
+      <div className="px-4 pt-5 pb-2">
+        <p
+          className="text-[0.58rem] font-bold uppercase tracking-[0.2em]"
+          style={{ color: 'var(--ink-faint)' }}
+        >
+          Contents
+        </p>
+      </div>
+
+      <nav className="flex flex-col px-2 pb-8 gap-0.5">
+        {NAV.map(({ href, label, num }) => {
           const isActive = pathname === href
           return (
-            <div key={href}>
-              <Link
-                href={href}
-                className={`nav-link${isActive ? ' active' : ''}`}
-              >
-                {label}
-              </Link>
-              {sub && isActive && sub.map(s => (
-                <Link key={s.href} href={s.href} className="nav-sub">
-                  {s.label}
-                </Link>
-              ))}
-            </div>
+            <Link
+              key={href}
+              href={href}
+              className={`nav-link group${isActive ? ' active' : ''}`}
+            >
+              {num ? (
+                <span
+                  className="text-[0.6rem] font-bold w-5 shrink-0 tabular-nums"
+                  style={{ color: isActive ? 'var(--moss)' : 'var(--ink-faint)' }}
+                >
+                  {num}
+                </span>
+              ) : (
+                <span className="w-5 shrink-0" />
+              )}
+              <span className="leading-tight">{label}</span>
+            </Link>
           )
         })}
       </nav>
+
+      {/* Bottom accent */}
+      <div className="mt-auto px-4 pb-6">
+        <div
+          className="rounded-md p-3 text-center"
+          style={{ background: 'rgba(46,125,82,0.08)', border: '1px solid rgba(46,125,82,0.15)' }}
+        >
+          <p className="text-[0.58rem] font-semibold uppercase tracking-widest" style={{ color: 'var(--moss)' }}>
+            EWB Challenge
+          </p>
+          <p className="text-[0.7rem] mt-0.5" style={{ color: 'var(--ink-faint)' }}>
+            Lama Lama Country
+          </p>
+        </div>
+      </div>
     </aside>
   )
 }
