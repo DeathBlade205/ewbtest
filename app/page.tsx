@@ -1,65 +1,41 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function ExecutiveSummary() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <div className="prose">
+      <p className="text-xs font-semibold uppercase tracking-widest text-[#2e7d52] mb-1">EWB Challenge 2025 — One Prompt Wonders</p>
+      <h1 className="text-3xl font-bold text-[#1a4731] mb-1">Executive Summary</h1>
+      <p className="text-sm text-gray-500 mb-8">31265 Computing and Information Technology Practice — Assessment Task 3</p>
+
+      <div className="infobox mb-8">
+        <p className="text-sm font-semibold text-[#145c3e] mb-2">Project Details</p>
+        <table className="text-sm w-full">
+          <tbody>
+            <tr><td className="pr-4 text-gray-500 py-0.5 w-36">Group</td><td>One Prompt Wonders</td></tr>
+            <tr><td className="pr-4 text-gray-500 py-0.5">Subject</td><td>31265 Computing and Information Technology Practice</td></tr>
+            <tr><td className="pr-4 text-gray-500 py-0.5">EWB Challenge</td><td>Lama Lama Country — Microgrids and hybrid systems for outstations</td></tr>
+            <tr><td className="pr-4 text-gray-500 py-0.5">Community Partner</td><td>Yintjingga Aboriginal Corporation / Lama Lama Land and Sea Rangers</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        This report presents the findings and design recommendation of One Prompt Wonders for the Engineers Without Borders (EWB) Challenge 2025, focused on the Lama Lama community of Cape York Peninsula, Queensland. The project addresses a persistent and critical energy access problem: the outstations of Lama Lama Country are entirely dependent on diesel-powered generation, leaving communities vulnerable to supply disruption during the wet season when road access is cut off for months at a time.
+      </p>
+
+      <p>
+        The group identified three non-negotiable criteria a viable solution must satisfy simultaneously: reducing or eliminating diesel dependence, reliably powering safety-critical services (lighting, refrigeration, and radio communications), and being community-appropriate — locally manageable and governed by the Lama Lama people themselves. Existing alternatives — commercial off-grid solar kits, hybrid diesel-solar systems, and grid connection — each fail on at least one of these criteria under the specific conditions of Lama Lama Country.
+      </p>
+
+      <p>
+        The recommended design solution is a distributed hybrid microgrid: rooftop solar panels (0.5–1.5 kW) mounted on existing buildings across the outstation, feeding into a shared 20–30 kWh lithium iron phosphate battery bank and hybrid inverter hub. The existing diesel generator is retained but repositioned as an automatic fallback, activating only when battery charge drops below 20%. A simple traffic-light monitoring display makes system status accessible to any community member without technical training.
+      </p>
+
+      <p>
+        Implementation follows a staged five-year transition beginning with a pilot at the ranger base, progressively expanding across all outstation buildings and reducing diesel reliance as community confidence and battery capacity grow. Total installation cost is estimated at $80,000–$120,000, with $40,000–$60,000 potentially available through ARENA's Remote and Off-Grid Communities program and complementary funding from the Queensland Government's First Nations Clean Energy Strategy. Based on Bushlight community data, annual savings of $5,500 per household over diesel suggest cost recovery within 15–20 years.
+      </p>
+
+      <p>
+        The design directly strengthens Lama Lama self-determination: governance at every stage remains with the Yintjingga Aboriginal Corporation, no land clearing is required, and the Bushlight-modelled training program builds genuine local capability that accumulates within the community over time.
+      </p>
     </div>
-  );
+  )
 }
