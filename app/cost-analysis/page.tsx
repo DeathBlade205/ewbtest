@@ -4,34 +4,45 @@ import ScrollReveal from '@/components/ScrollReveal'
 export default function CostAnalysis() {
   return (
     <div>
-      <SectionHero num="08" title="Cost Analysis" subtitle="Installation estimates, annual savings over diesel, and the funding pathway through ARENA and Queensland Government." />
-      <div className="px-8 md:px-16 py-12 max-w-3xl">
+      <SectionHero num="08" title="Cost Analysis" subtitle="Full bill of materials, funding pathway, and lifecycle savings. All costs in AUD. Phase 1, 4–6 buildings." />
+      <div className="px-8 md:px-14 py-12 max-w-3xl">
         <div className="prose">
-          <ScrollReveal><p>The Clean Energy Council (2023) reports that off-grid rooftop solar and battery systems in remote Australia typically cost $15,000–$30,000 per dwelling. For a four-to-six structure outstation, total installation is estimated at $80,000–$120,000 (Australian Renewable Energy Agency, 2023).</p></ScrollReveal>
-          <ScrollReveal delay={0.06}>
-            <table className="matrix">
-              <thead><tr><th>Cost Category</th><th>Estimate (AUD)</th><th>Notes</th></tr></thead>
-              <tbody>
-                <tr><td>Rooftop PV panels (all buildings)</td><td>$18,000–$28,000</td><td>0.5–1.5 kW per building; micro-inverters and mounting hardware</td></tr>
-                <tr><td>LFP battery bank (20–30 kWh)</td><td>$20,000–$35,000</td><td>Flood-safe central installation</td></tr>
-                <tr><td>Hybrid inverter hub</td><td>$8,000–$12,000</td><td>Manages PV, battery, diesel and AC output</td></tr>
-                <tr><td>Traffic-light monitoring display</td><td>$1,000–$2,000</td><td>Wired to inverter charge state signal</td></tr>
-                <tr><td>Wiring, distribution, labour</td><td>$15,000–$22,000</td><td>Licensed electrician remote site travel included</td></tr>
-                <tr><td>Transport (air, barge, 4WD)</td><td>$10,000–$15,000</td><td>Modular components sized within freight limits</td></tr>
-                <tr><td>Contingency (10%)</td><td>$7,000–$11,000</td><td>Remote deployment buffer</td></tr>
-                <tr className="winner"><td><strong>Total</strong></td><td><strong>$80,000–$120,000</strong></td><td>Consistent with CEC benchmarks for 4–6 structure remote outstations</td></tr>
-              </tbody>
-            </table>
+          <ScrollReveal>
+            <p>All costs are in Australian dollars (AUD). The outstation is assumed to contain 4–6 buildings. Prices are sourced from the Clean Energy Council (2023), ARENA (2023), and industry supplier estimates as cited.</p>
           </ScrollReveal>
-          <ScrollReveal delay={0.08}><h3>Savings and Cost Recovery</h3><p>Bushlight communities reported average savings of $5,500 per household per year over diesel (Centre for Appropriate Technology, n.d.) — capturing only direct fuel costs. The compounding costs of emergency resupply flights, generator downtime, and extended outage productivity losses mean the true financial advantage is considerably greater. Cost recovery is estimated within 15–20 years (Australian Renewable Energy Agency, 2023).</p></ScrollReveal>
-          <ScrollReveal delay={0.1}>
-            <h3>Funding Pathway</h3>
-            <div className="infobox">
-              <p className="text-sm font-semibold mb-2" style={{ color: 'var(--pine)' }}>ARENA Remote and Off-Grid Communities Program — $40,000–$60,000</p>
-              <p className="text-sm mb-3" style={{ color: 'var(--ink-muted)' }}>Up to 50% of eligible project costs. Well-precedented across remote Indigenous Australia. The Yintjingga Aboriginal Corporation's governance structure strengthens any application considerably (Australian Renewable Energy Agency, 2020).</p>
-              <p className="text-sm font-semibold mb-1" style={{ color: 'var(--pine)' }}>QLD First Nations Clean Energy Strategy — Complementary</p>
-              <p className="text-sm" style={{ color: 'var(--ink-muted)' }}>Commits funding specifically to remote Indigenous energy projects in Cape York and the Gulf (Independent Australia, 2025).</p>
+
+          <ScrollReveal delay={0.06}>
+            <div className="not-prose overflow-x-auto mb-2">
+              <table className="matrix" style={{ minWidth: 500 }}>
+                <thead>
+                  <tr><th>Item</th><th>Qty / Unit</th><th>AUD (est.)</th><th>Notes / Source</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Monocrystalline PV panels (400 W each, 12 panels total 4.8 kW)</td><td>12 panels</td><td>$6,000–$8,400</td><td>Clean Energy Council, 2023</td></tr>
+                  <tr><td>LiFePO4 battery bank (20 kWh usable, 3-day autonomy)</td><td>1 system</td><td>$18,000–$24,000</td><td>ARENA, 2023</td></tr>
+                  <tr><td>Hybrid inverter-charger (5 kW, Victron MultiPlus or equiv.)</td><td>1 unit</td><td>$3,500–$5,000</td><td>Supplier quote</td></tr>
+                  <tr><td>Rooftop mounting hardware (cyclone-rated, marine grade)</td><td>Lump sum</td><td>$4,000–$6,000</td><td>EWB, 2025b</td></tr>
+                  <tr><td>Traffic-light monitoring display unit</td><td>1 unit</td><td>$800–$1,200</td><td>Custom / off-shelf</td></tr>
+                  <tr><td>Cabling, conduit, circuit protection (marine grade)</td><td>Lump sum</td><td>$3,000–$5,000</td><td>EWB, 2025e; Gaonkar et al., 2024</td></tr>
+                  <tr><td>Battery enclosure with passive ventilation</td><td>1 unit</td><td>$2,000–$3,500</td><td>Gaonkar et al., 2024</td></tr>
+                  <tr><td>Freight (light aircraft / barge / 4WD logistics)</td><td>Lump sum</td><td>$8,000–$15,000</td><td>EWB, 2025</td></tr>
+                  <tr><td>Installation labour (certified sparky + community)</td><td>10–15 days</td><td>$12,000–$18,000</td><td>Industry estimate</td></tr>
+                  <tr><td>Bushlight-model training programme (Year 1)</td><td>Per program</td><td>$5,000–$8,000</td><td>Independent Australia, 2025</td></tr>
+                  <tr><td>Annual maintenance (Years 2–5)</td><td>Per annum</td><td>$3,000–$5,000</td><td>ARENA, 2023</td></tr>
+                  <tr><td>Battery replacement (Year 10–15 estimate)</td><td>1 system</td><td>$15,000–$20,000</td><td>Gaonkar et al., 2024</td></tr>
+                  <tr className="winner"><td><strong>TOTAL INSTALLATION (Phase 1)</strong></td><td>—</td><td><strong>$62,300–$94,100</strong></td><td>—</td></tr>
+                  <tr><td>Less ARENA grant (up to 50% eligible costs)</td><td>—</td><td>–$31,000–$47,000</td><td>ARENA Remote Off-Grid Program</td></tr>
+                  <tr><td>Less Qld First Nations Clean Energy Strategy</td><td>—</td><td>–$10,000–$20,000</td><td>Qld Govt, 2024</td></tr>
+                  <tr className="winner"><td><strong>NET COMMUNITY OUTLAY (est.)</strong></td><td>—</td><td><strong>$5,300–$27,100</strong></td><td>Subject to application success</td></tr>
+                </tbody>
+              </table>
+              <p className="text-xs italic mt-2" style={{ color: 'var(--ink-faint)' }}>Table 4: Bill of Materials and cost estimate for Phase 1 installation. All prices AUD. Sources cited in final column.</p>
             </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.1}>
+            <h3>Lifecycle Savings</h3>
+            <p>Bushlight communities reported $5,500/household/year in fuel savings (Independent Australia, 2025), totalling approximately $440,000 over 20 years for a four-building outstation. ARENA grants can cover up to 50% of eligible costs and the Queensland First Nations Clean Energy Strategy targets Cape York specifically (Queensland Government, 2024), reducing net community outlay to $5,300–$27,100.</p>
           </ScrollReveal>
         </div>
       </div>

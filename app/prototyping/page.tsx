@@ -4,13 +4,50 @@ import ScrollReveal from '@/components/ScrollReveal'
 export default function Prototyping() {
   return (
     <div>
-      <SectionHero num="06" title="Prototyping" subtitle="Systems architecture schematic validation and reference case analysis via the Bushlight program and ARENA precedents." />
-      <div className="px-8 md:px-16 py-12 max-w-3xl">
+      <SectionHero num="06" title="Prototyping" subtitle="A 1:50 scale physical model validating the distributed rooftop PV layout across three building types." />
+      <div className="px-8 md:px-14 py-12 max-w-3xl">
         <div className="prose">
-          <ScrollReveal><p>Physical construction of a full-scale prototype was not feasible within the scope of this project given the remote and logistically constrained nature of the Lama Lama outstations. Prototyping was instead conducted through two complementary methods: a systems architecture schematic validated against published technical specifications, and a reference case analysis of comparable real-world deployments.</p></ScrollReveal>
-          <ScrollReveal delay={0.06}><h3>System Architecture Schematic</h3><p>A detailed system architecture diagram was developed mapping the full power flow from each generation point through to end-use loads. Solar DC from each building's rooftop PV (ranger base 1.5 kW, communal kitchen 1.0 kW, dwellings 0.5 kW) feeds into the hybrid inverter hub, which manages charge state and converts to AC output. The LFP battery bank charges from solar surplus and discharges to supply loads. The charge state signal drives the traffic-light display and triggers diesel activation below 20%. The schematic was reviewed against manufacturer specifications for commercially available hybrid inverter systems and LFP battery banks used in comparable Australian off-grid deployments, confirming the integration approach is technically sound (Australian Renewable Energy Agency, 2023).</p></ScrollReveal>
-          <ScrollReveal delay={0.08}><h3>Reference Case: The Bushlight Program</h3><p>The primary real-world reference is the Bushlight program, operated by the Centre for Appropriate Technology across remote Indigenous communities in northern and central Australia. Bushlight installed and maintained off-grid solar and battery systems at over 180 remote outstations, specifically including communities in Cape York and Queensland's Gulf Country — environments directly comparable to Lama Lama Country in climate, remoteness, and governance structure. Bushlight demonstrated that community-managed off-grid solar systems can reliably power essential services without ongoing external technical support, provided the training program is comprehensive and locally owned (Centre for Appropriate Technology, n.d.). Average annual savings of $5,500 per household over diesel were reported.</p></ScrollReveal>
-          <ScrollReveal delay={0.1}><h3>ARENA Precedent</h3><p>ARENA's Solar Energy Transformation Program provides a further reference case: 25 remote Indigenous communities in the Northern Territory transitioned from diesel primary generation to solar-plus-battery hybrid systems through a staged process directly analogous to the five-year transition proposed here — demonstrating at scale that the proposed approach is not experimental but proven (Australian Renewable Energy Agency, 2025).</p></ScrollReveal>
+          <ScrollReveal>
+            <h3>What Was Prototyped and Why</h3>
+            <p>The energy system's distributed rooftop PV arrangement was prioritised for prototyping, as roof geometry, panel orientation, and spatial fit across three different building types were the primary unknowns in the design. A physical 1:50 scale model was chosen over digital rendering because it can be handled and understood without technical literacy, making it appropriate for direct presentation to the YAC and Rangers during community consultation.</p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.06}>
+            <h3>Construction</h3>
+            <p>The model was constructed at 1:50 scale using laser-cut cardboard for building forms and 3D-printed components for panel modules and mounting brackets, representing the three building types present at the outstation.</p>
+            <table>
+              <thead><tr><th>Building</th><th>Roof Type</th><th>PV Capacity</th><th>Model Material</th></tr></thead>
+              <tbody>
+                <tr><td>Ranger Base</td><td>Sloped corrugated-iron</td><td>1.5 kW</td><td>Laser-cut cardboard + 3D-printed panels</td></tr>
+                <tr><td>Communal Kitchen</td><td>Flat concrete slab</td><td>1.0 kW</td><td>Laser-cut cardboard + 3D-printed panels</td></tr>
+                <tr><td>Dwelling</td><td>Sheltered carport</td><td>0.5 kW</td><td>Laser-cut cardboard + 3D-printed panels</td></tr>
+              </tbody>
+            </table>
+            <p className="fig-caption">Table 2: Each building type and their components used</p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.08}>
+            <h3>Testing and Results</h3>
+            <p>The model was tested by physically orienting each building form toward true north and assessing panel placement for shading conflicts, tilt suitability, and spatial clearance. Results are summarised below.</p>
+            <table>
+              <thead><tr><th>Test</th><th>What Was Checked</th><th>Result</th></tr></thead>
+              <tbody>
+                <tr><td>Roof area adequacy</td><td>Sufficient panel footprint on each roof</td><td>✓ Confirmed across all three buildings</td></tr>
+                <tr><td>North-facing orientation</td><td>Panel alignment toward true north</td><td>✓ Confirmed across all three buildings</td></tr>
+                <tr><td>Tilt angle suitability</td><td>Angle of slope on corrugated-iron roof</td><td>✓ Suitable — no ridgeline or structural obstruction</td></tr>
+                <tr><td>Shading conflicts</td><td>Adjacent structures blocking panel exposure</td><td>✓ None identified</td></tr>
+                <tr><td>Battery enclosure fit</td><td>Space available adjacent to Ranger Base</td><td>✓ Confirmed — sufficient sheltered clearance</td></tr>
+                <tr><td>Roof geometry compatibility</td><td>Any irregular forms preventing panel mounting</td><td>✓ No incompatible geometries found</td></tr>
+              </tbody>
+            </table>
+            <p className="fig-caption">Table 3: Results of testing the model types and how each test was checked</p>
+            <p>All tests passed without requiring design modifications. The prototype successfully validated the rooftop PV layout prior to finalising the system design. Full testing notes and additional photographs of the model are provided in Appendix 2 for reference.</p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.1}>
+            <h3>What Remains to Be Tested</h3>
+            <div className="placeholder">Full electrical system integration testing — including real inverter-battery-PV interaction under tropical load conditions — requires on-site installation and cannot be completed within the scope of this project. This testing should be conducted during Phase 1 installation at the ranger base.</div>
+          </ScrollReveal>
         </div>
       </div>
     </div>

@@ -4,13 +4,41 @@ import ScrollReveal from '@/components/ScrollReveal'
 export default function OtherConsiderations() {
   return (
     <div>
-      <SectionHero num="09" title="Other Considerations" subtitle="Cultural governance, environmental respect, social co-benefits, and long-term sustainability of the design." />
-      <div className="px-8 md:px-16 py-12 max-w-3xl">
+      <SectionHero num="09" title="Other Considerations" subtitle="Community reaction, journey map, and the anticipated arc from cautious interest to confident ownership." />
+      <div className="px-8 md:px-14 py-12 max-w-3xl">
         <div className="prose">
-          <ScrollReveal><h3>Cultural and Governance Alignment</h3><p>Governance remains with the Yintjingga Aboriginal Corporation at every stage — placement decisions, operational priorities, and upgrade decisions belong to the community, not the engineering team. The training model builds genuine local technical capability that accumulates within the community over time. The five-year staged transition means the community's confidence and capacity grow in parallel with the system's deployment — never asked to manage a system larger than it is ready for (Yintjingga Aboriginal Corporation, n.d.). The design actively strengthens Lama Lama self-determination rather than merely solving an energy problem.</p></ScrollReveal>
-          <ScrollReveal delay={0.06}><h3>Environmental Respect</h3><p>Rooftop mounting eliminates any vegetation clearing, soil disturbance, or land use change. Sacred sites, traditional pathways, and cultural corridors across the outstation are fully preserved (Centre for Appropriate Technology, 2009). Low-profile panel mounting reduces bird strike risk. The diesel site is remediated and landscape restored as diesel phases to emergency-only status by Year 5. A comparative life cycle assessment by Roy and Pearce (2024) confirms distributed rooftop PV has a lower environmental footprint than equivalent ground-mounted systems across land use, biodiversity impact, and embodied carbon.</p></ScrollReveal>
-          <ScrollReveal delay={0.08}><h3>Social Co-Benefits</h3><p>Reliable energy access has direct and significant social co-benefits beyond the energy problem itself. Refrigeration supports health outcomes for rangers and Elders on extended outstation stays. Reliable lighting extends working and cultural days and reduces after-dark safety risks. Communications continuity — particularly radio — supports safety coordination for ranger operations across Country. These outcomes compound the direct economic benefits and together constitute a material improvement in quality of life for Lama Lama community members (Lama Lama Land and Sea Rangers, n.d.).</p></ScrollReveal>
-          <ScrollReveal delay={0.1}><h3>Long-Term Sustainability</h3><p>Technical sustainability rests on the modular architecture using standard commercially available components, with no dependence on any single manufacturer. Operational sustainability is ensured by the Bushlight training model and Yintjingga Aboriginal Corporation governance. Financial sustainability is driven by $5,500/household/year savings over diesel, which compound as diesel prices escalate and battery technology costs continue to decline (Martire, 2020). The Cape York Partnership's broader clean energy work — including hydrogen pilot projects — provides a longer-term context in which this microgrid infrastructure could serve as a backbone for further integration (Cape York Partnership, 2022).</p></ScrollReveal>
+          <ScrollReveal>
+            <h3>Community Reaction and Journey Map</h3>
+            <p>The expected community reaction follows an arc from cautious interest to confident ownership. In Phase 1, community members with prior experience of infrastructure failures may approach the pilot cautiously; Rangers completing training are expected to become internal advocates (CfAT, n.d.). By Phases 2–3, growing evidence of reliability and independently resolved faults shift Rangers from observers to owners. By Phase 5, YAC governs upgrades without reference to external providers, consistent with ARENA's Northern Territory program outcomes (Independent Australia, 2025). Pain points — unfamiliar technology, historical distrust, and language accessibility — are addressed respectively by the Bushlight training model, the pilot-first approach, and plain-English visual materials co-designed with YAC.</p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.06}>
+            <div className="not-prose flex flex-col gap-3 mb-6">
+              {[
+                {
+                  phase: 'Phase 1 (Year 1–2)',
+                  title: 'Scepticism and First Evidence',
+                  body: 'Community members with prior experience of infrastructure failures may approach the pilot cautiously. The pilot at the ranger base — the most operationally critical and trust-invested location — is designed to build visible early evidence of reliability before any expansion. Rangers completing the Bushlight training programme are expected to become internal advocates. Key milestone: first wet season in which the outstation does not lose power.',
+                },
+                {
+                  phase: 'Phase 2 (Years 2–3)',
+                  title: 'Growing Confidence',
+                  body: 'As panels are added building-by-building and diesel use visibly declines, community confidence in the system\'s reliability grows. Rangers begin diagnosing and resolving faults independently, shifting from observers to owners of the system. Key milestone: first time Rangers independently resolve a fault without external assistance.',
+                },
+                {
+                  phase: 'Phases 3–5 (Years 3–5)',
+                  title: 'Energy Sovereignty',
+                  body: 'Diesel use drops below 50% then approaches emergency-only status. YAC governs system upgrades through its own frameworks without reference to external providers. Key milestone: first year in which diesel use falls below 20%, consistent with ARENA\'s Northern Territory program outcomes (Independent Australia, 2025).',
+                },
+              ].map(({ phase, title, body }) => (
+                <div key={phase} className="rounded-lg p-5" style={{ background: 'var(--surface-2)', border: '1px solid var(--border)' }}>
+                  <p className="text-xs font-bold uppercase tracking-widest mb-0.5" style={{ color: 'var(--ochre)' }}>{phase}</p>
+                  <p className="font-bold text-sm mb-1" style={{ color: 'var(--ink)' }}>{title}</p>
+                  <p className="text-sm leading-relaxed" style={{ color: 'var(--ink-muted)' }}>{body}</p>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
         </div>
       </div>
     </div>

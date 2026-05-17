@@ -4,42 +4,45 @@ import ScrollReveal from '@/components/ScrollReveal'
 export default function DesignSelection() {
   return (
     <div>
-      <SectionHero num="04" title="Design Selection" subtitle="Weighted decision matrix evaluation of the three design options against five criteria." />
-      <div className="px-8 md:px-16 py-12 max-w-3xl">
+      <SectionHero num="04" title="Design Selection" subtitle="Weighted decision matrix comparing three design options against five criteria. Ratings 1–5 (5 = optimal). Distributed Rooftop selected." />
+      <div className="px-8 md:px-14 py-12 max-w-3xl">
         <div className="prose">
           <ScrollReveal>
-            <p>The three design options were evaluated using a weighted decision matrix scored against five criteria. Each criterion was weighted to reflect its relative importance in the Lama Lama context, and each idea was scored 1–5. Viability (weight 5) and desirability (weight 4) carry the greatest influence — a system must first survive Cape York's conditions and fit the community's cultural context before anything else applies.</p>
+            <p>Three options were evaluated against the five weighted design criteria using a decision matrix. Ratings are on a scale of 1–5, where 5 is optimal performance against the criterion and 1 is poor performance. Weighted scores are the product of the raw rating and the criterion weight.</p>
           </ScrollReveal>
 
           <ScrollReveal delay={0.06}>
-            <table className="matrix">
-              <thead>
-                <tr>
-                  <th>Criterion</th>
-                  <th>Weight</th>
-                  <th>Idea A</th>
-                  <th>A×W</th>
-                  <th>Idea B</th>
-                  <th>B×W</th>
-                  <th>Idea C</th>
-                  <th>C×W</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td>Viability</td><td>5</td><td>3</td><td>15</td><td>5</td><td>25</td><td>3</td><td>15</td></tr>
-                <tr><td>Desirability</td><td>4</td><td>1</td><td>4</td><td>3</td><td>12</td><td>1</td><td>4</td></tr>
-                <tr><td>Cost</td><td>4</td><td>3</td><td>12</td><td>3</td><td>12</td><td>2</td><td>8</td></tr>
-                <tr><td>Competency</td><td>3</td><td>1</td><td>3</td><td>5</td><td>15</td><td>1</td><td>3</td></tr>
-                <tr><td>Alignment</td><td>2</td><td>1</td><td>2</td><td>4</td><td>8</td><td>1</td><td>2</td></tr>
-                <tr className="winner"><td><strong>Total</strong></td><td>—</td><td>—</td><td><strong>36</strong></td><td>—</td><td><strong>72</strong></td><td>—</td><td><strong>32</strong></td></tr>
-              </tbody>
-            </table>
+            <div className="not-prose overflow-x-auto mb-6">
+              <table className="matrix" style={{ minWidth: 600 }}>
+                <thead>
+                  <tr>
+                    <th>Criterion (Weight)</th>
+                    <th>Weight</th>
+                    <th>Centralised Ground-Mount Raw</th>
+                    <th>Wtd</th>
+                    <th>Distributed Rooftop Raw</th>
+                    <th>Wtd</th>
+                    <th>Per-Building Standalone Raw</th>
+                    <th>Wtd</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Viability (climate + reliability)</td><td>5</td><td>3</td><td>15</td><td>5</td><td>25</td><td>3</td><td>15</td></tr>
+                  <tr><td>Desirability (cultural fit)</td><td>4</td><td>1</td><td>4</td><td>3</td><td>12</td><td>1</td><td>4</td></tr>
+                  <tr><td>Cost (upfront + long-term)</td><td>4</td><td>3</td><td>12</td><td>3</td><td>12</td><td>2</td><td>8</td></tr>
+                  <tr><td>Competency (local maintainability)</td><td>3</td><td>1</td><td>3</td><td>5</td><td>15</td><td>1</td><td>3</td></tr>
+                  <tr><td>Alignment (modular, co-design)</td><td>2</td><td>3</td><td>6</td><td>4</td><td>8</td><td>3</td><td>6</td></tr>
+                  <tr className="winner"><td><strong>TOTAL</strong></td><td>—</td><td>—</td><td><strong>40</strong></td><td>—</td><td><strong>72</strong></td><td>—</td><td><strong>36</strong></td></tr>
+                </tbody>
+              </table>
+              <p className="text-xs italic mt-2" style={{ color: 'var(--ink-faint)' }}>Table 1: Decision matrix comparing three design options against five weighted criteria (1 = poor, 5 = optimal). Distributed Rooftop selected.</p>
+            </div>
           </ScrollReveal>
 
           <ScrollReveal delay={0.08}>
-            <h3>Justification for Idea B</h3>
-            <p>Idea B scores highest by a substantial margin (72 vs 36 and 32). On viability, Ideas A and C both score 3 — Idea A creates a single point of failure unmanageable remotely; Idea C has no wet season fallback. Idea B scores 5: rooftop distribution localises faults, the diesel fallback guarantees continuity, and the five-year staged transition ensures the system is never deployed beyond what the community can manage (Australian Renewable Energy Agency, 2025).</p>
-            <p>Ideas A and C both score 1 on desirability and competency. Idea A requires vegetation clearing on Country; Idea C multiplies maintenance points beyond realistic community capacity. Idea B scores 3 on desirability (diesel retained temporarily by design) and 5 on competency, validated by the Bushlight training model at comparable remote sites (Centre for Appropriate Technology, n.d.). Its alignment score of 4 reflects the modular, scalable, co-design architecture directly matching EWB Project 3.2 requirements.</p>
+            <h3>4.4 Justification for Distributed Rooftop (Option B)</h3>
+            <p>The Distributed Rooftop option scores 5 on both Viability and Competency: rooftop distribution localises faults, diesel fallback guarantees wet season continuity, and the Bushlight-proven training model confirms local maintainability (Independent Australia, 2025). With a weighted score of 72 against 40 and 36, the Distributed Rooftop with Shared Battery and Diesel Fallback is selected as the only option satisfying all five criteria simultaneously.</p>
+            <p>Option A (Centralised Ground-Mount) scores 1 on Desirability and Competency — it requires vegetation clearance on Country (irresolvable against Criterion 4) and creates a single point of failure. Option C (Per-Building Standalone) scores 1 on Desirability and Competency — no fallback during extended cloud cover risks safety-critical outages, and multiple independent fault points exceed realistic community management capacity.</p>
           </ScrollReveal>
         </div>
       </div>

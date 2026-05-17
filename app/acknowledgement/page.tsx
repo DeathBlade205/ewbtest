@@ -4,32 +4,20 @@ import ScrollReveal from '@/components/ScrollReveal'
 export default function Acknowledgement() {
   return (
     <div>
-      <SectionHero title="Acknowledgement of Country" subtitle="Acknowledging the Gadigal people and the Lama Lama Traditional Custodians of Cape York Peninsula." />
-      <div className="px-8 md:px-16 py-12 max-w-3xl">
+      <SectionHero title="Team Acknowledgement" subtitle="Acknowledging the Lama Lama People as Traditional Custodians of Lama Lama Country." />
+      <div className="px-8 md:px-14 py-12 max-w-3xl">
         <div className="prose">
           <ScrollReveal>
             <div className="infobox">
               <p className="text-base leading-relaxed italic" style={{ color: 'var(--pine)' }}>
-                The group acknowledges the Gadigal people of the Eora Nation, upon whose ancestral lands the UTS City campus now stands. The group pays respect to the Elders both past and present, acknowledging them as the traditional custodians of knowledge for this land.
+                The team respectfully acknowledges the Lama Lama People as the Traditional Custodians of the lands and waters of Lama Lama Country, extending several hundred kilometres around Princess Charlotte Bay on the eastern Cape York Peninsula. The team pays respect to Lama Lama Elders past, present, and emerging, and recognises their enduring sovereignty, spiritual connection, and custodial responsibility to Country — including its lands, rivers, wetlands, and Sea Country.
               </p>
             </div>
           </ScrollReveal>
 
           <ScrollReveal delay={0.06}>
             <p>
-              This project concerns the Lama Lama people of Cape York Peninsula in Queensland. The group acknowledges the Lama Lama people as the Traditional Custodians of the Country on which this project's community partner, the Yintjingga Aboriginal Corporation, holds governance authority. The group pays respect to Lama Lama Elders past, present, and emerging.
-            </p>
-          </ScrollReveal>
-
-          <ScrollReveal delay={0.1}>
-            <p>
-              The group further acknowledges that the design work presented in this report has been developed in response to a community-defined challenge, and that the Lama Lama people's sovereignty over their Country — including decisions about what infrastructure is placed upon it — must be respected at every stage of any implementation process. The proposed solution has been designed with this principle as a non-negotiable constraint, not an aspiration.
-            </p>
-          </ScrollReveal>
-
-          <ScrollReveal delay={0.14}>
-            <p>
-              The EWB Challenge framework within which this project was conducted acknowledges the importance of meaningful community partnership and co-design. The group recognises that genuine partnership requires ongoing relationship, not a single project engagement, and that the recommendations in this report represent a starting point for community-led decision-making, not a conclusion.
+              The Yintjingga Aboriginal Corporation (YAC) and the Lama Lama Land Trust hold governance authority over Lama Lama Country, and the team acknowledges that decisions regarding infrastructure on Country belong to the Lama Lama community. This project sits within a broader history in which infrastructure decisions have too often been made for, rather than with, remote Indigenous communities. The team has endeavoured throughout this work to centre the needs, values, and governance structures of the Lama Lama people, and acknowledges that further direct consultation with YAC is an essential next step before any design is implemented.
             </p>
           </ScrollReveal>
         </div>

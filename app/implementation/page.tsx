@@ -4,39 +4,63 @@ import ScrollReveal from '@/components/ScrollReveal'
 export default function Implementation() {
   return (
     <div>
-      <SectionHero num="07" title="Implementation Plan" subtitle="Five-year staged diesel transition with logistics, community training, and risk management." />
-      <div className="px-8 md:px-16 py-12 max-w-3xl">
+      <SectionHero num="07" title="Implementation Plan" subtitle="Five-year staged diesel transition with community training, evaluation, and community ownership at every stage." />
+      <div className="px-8 md:px-14 py-12 max-w-3xl">
         <div className="prose">
-          <ScrollReveal><p>Implementation is structured around a five-year staged diesel transition designed to match the logistical realities of remote deployment and the pace at which community confidence and technical capability can grow. The staged approach ensures the system is never deployed beyond what the Lama Lama rangers can reliably manage at any given point (Centre for Appropriate Technology, n.d.; Australian Renewable Energy Agency, 2025).</p></ScrollReveal>
-
-          <ScrollReveal delay={0.06}>
-            <h3>Five-Year Staged Transition</h3>
-            <table>
-              <thead><tr><th>Phase</th><th>Period</th><th>Activities</th><th>Diesel Role</th></tr></thead>
-              <tbody>
-                <tr><td><strong>Phase 1</strong></td><td>Year 1</td><td>Pilot at ranger base: rooftop PV, battery bank, hybrid inverter hub, traffic-light display. Bushlight training begins.</td><td>Full backup</td></tr>
-                <tr><td><strong>Phase 2</strong></td><td>Years 2–3</td><td>Panels expand to communal kitchen and dwellings. Battery capacity increases. Advanced ranger training. Performance monitored.</td><td>Use halved</td></tr>
-                <tr><td><strong>Phase 3</strong></td><td>Years 3–5</td><td>Full three-day battery autonomy. Consistent renewable primary supply. Community manages independently.</td><td>Emergency only</td></tr>
-                <tr><td><strong>Phase 4</strong></td><td>Year 5+</td><td>Renewable primary source. Ongoing CfAT support available. Modular expansion possible.</td><td>Rarely activated</td></tr>
-              </tbody>
-            </table>
+          <ScrollReveal>
+            <p>Implementation follows a five-year staged transition matching remote deployment logistics and building community operational confidence alongside system capacity.</p>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.08}><h3>Logistics</h3><p>All components must be transported by light aircraft, barge, or 4WD — the only viable options for Cape York. This directly informed the design: all components are modular, lightweight, and require no heavy civil works. Rooftop mounting uses existing building structures, eliminating the need for concrete foundations. Battery modules and panel sections are sized for standard air freight and barge load limits.</p></ScrollReveal>
+          <ScrollReveal delay={0.06}>
+            <h3>Five-Year Staged Diesel Transition</h3>
+          </ScrollReveal>
 
-          <ScrollReveal delay={0.1}><h3>Community Engagement and Training</h3><p>The Bushlight training model is adopted as the framework for building local technical capability. Governance remains with the Yintjingga Aboriginal Corporation at every stage. Phase 1 training focuses on traffic-light interface monitoring and routine panel cleaning. Phase 2 advances to battery state-of-charge interpretation and component inspection. Phase 3 establishes fully independent community operation, with CfAT technical support available remotely and via periodic site visits.</p></ScrollReveal>
+          <ScrollReveal delay={0.08}>
+            <div className="not-prose flex flex-col gap-3 mb-8">
+              {[
+                {
+                  phase: 'Phase 1 (Year 1)', title: 'Pilot Ranger Base',
+                  body: 'Install 2 kW rooftop PV, 10 kWh battery bank, hybrid inverter hub, and monitoring display at the ranger base. Diesel remains primary source. The Bushlight-modelled training programme is delivered here covering panel cleaning, battery monitoring, inverter operation, and fault identification alongside co-development of a YAC governance framework for the energy system.',
+                  diesel: 'Full backup',
+                },
+                {
+                  phase: 'Phase 2 (Years 2–3)', title: 'Expansion to Remaining Buildings',
+                  body: 'PV and battery modules are added building-by-building, growing total capacity to 4.8–7.2 kW PV and 20 kWh battery. Diesel drops to secondary source, activating only below 20% state-of-charge.',
+                  diesel: 'Secondary source',
+                },
+                {
+                  phase: 'Phases 3–5 (Years 3–5)', title: 'Diesel to Emergency-Only',
+                  body: 'Battery capacity expands to cover extended wet season cloud cover. By Year 5, diesel use targets under 20% of total generation, consistent with ARENA\'s Solar Energy Transformation Program outcomes across 25 Northern Territory communities (Independent Australia, 2025).',
+                  diesel: 'Emergency only (<20%)',
+                },
+              ].map(({ phase, title, body, diesel }) => (
+                <div key={phase} className="rounded-lg p-5" style={{ background: 'var(--surface-2)', border: '1px solid var(--border)' }}>
+                  <div className="flex items-start justify-between gap-4 mb-2">
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-widest mb-0.5" style={{ color: 'var(--ochre)' }}>{phase}</p>
+                      <p className="font-bold text-sm" style={{ color: 'var(--ink)' }}>{title}</p>
+                    </div>
+                    <span className="text-xs font-semibold px-2 py-0.5 rounded shrink-0" style={{ background: 'rgba(46,125,82,0.1)', color: 'var(--moss)', border: '1px solid rgba(46,125,82,0.2)' }}>Diesel: {diesel}</span>
+                  </div>
+                  <p className="text-sm leading-relaxed" style={{ color: 'var(--ink-muted)' }}>{body}</p>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.1}>
+            <h3>Community Training and Capacity Building</h3>
+            <p>The Bushlight training model is adopted in full: hands-on, outstation-delivered, and repeated annually with refresher components (Independent Australia, 2025). Training covers panel inspection, monitoring interface interpretation, inverter fault codes, battery management, generator operation, and cable inspection. Materials are in plain English with visual diagrams for both printed and on-device use.</p>
+          </ScrollReveal>
 
           <ScrollReveal delay={0.12}>
-            <h3>Risk Management</h3>
-            <table>
-              <thead><tr><th>Risk</th><th>Likelihood</th><th>Mitigation</th></tr></thead>
-              <tbody>
-                <tr><td>Transport delayed by wet season</td><td>High</td><td>Phase 1 scheduled for dry season; spare components stocked before wet season onset</td></tr>
-                <tr><td>Cyclone panel damage</td><td>Medium</td><td>Low-profile rooftop mounting; cyclone-rated hardware; insurance in budget</td></tr>
-                <tr><td>Battery fault requiring specialist</td><td>Low</td><td>LFP reliability; modular replacement by trained rangers; diesel fallback during resolution</td></tr>
-                <tr><td>Community capacity below expected</td><td>Low</td><td>Staged transition; diesel available; no Phase 2 without Yintjingga Aboriginal Corporation sign-off</td></tr>
-              </tbody>
-            </table>
+            <h3>Evaluation</h3>
+            <p>Rangers evaluate system performance quarterly using a checklist covering kWh generation, diesel activation events, battery state-of-charge, fault events, and community satisfaction. Annual YAC reviews assess diesel transition progress and identify component upgrades.</p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.14}>
+            <h3>Community Ownership and Repairs</h3>
+            <p>All assets are owned by YAC from installation. YAC governs expansion, modification, and end-of-life decisions. Rangers perform routine maintenance; component faults are resolved using pre-positioned spares with satellite phone support from CfAT or the installer. Emergency components can be flown in within 24–48 hours. Battery disposal is managed through a certified recycler, with logistics written into the YAC governance framework.</p>
           </ScrollReveal>
         </div>
       </div>

@@ -4,25 +4,27 @@ import ScrollReveal from '@/components/ScrollReveal'
 export default function Recommendations() {
   return (
     <div>
-      <SectionHero num="10" title="Recommendations" subtitle="Primary recommendation and five supporting actions for implementation, funding, and community partnership." />
-      <div className="px-8 md:px-16 py-12 max-w-3xl">
+      <SectionHero num="10" title="Recommendations" subtitle="Actions for the Yintjingga Aboriginal Corporation, EWB, and further research required before implementation." />
+      <div className="px-8 md:px-14 py-12 max-w-3xl">
         <div className="prose">
           <ScrollReveal>
-            <div className="infobox">
-              <p className="text-sm font-semibold" style={{ color: 'var(--pine)' }}>Primary Recommendation</p>
-              <p className="text-sm mt-1" style={{ color: 'var(--ink-muted)' }}>The Yintjingga Aboriginal Corporation and Lama Lama Land and Sea Rangers, in partnership with an appropriate technical delivery partner (such as the Centre for Appropriate Technology), should proceed with implementation of a distributed hybrid microgrid at the Lama Lama outstation, following the five-year staged diesel transition plan outlined in Section 7.</p>
-            </div>
-            <p>This recommendation is supported by the decision matrix result (Idea B total: 72, vs 36 and 32 for alternatives), the Bushlight and ARENA precedent at comparable remote Indigenous sites, and strong alignment with ARENA funding criteria and the Queensland Government's First Nations Clean Energy Strategy. It is the only evaluated option that satisfies all three design criteria simultaneously.</p>
+            <h3>For the Yintjingga Aboriginal Corporation and EWB</h3>
+            <ol>
+              <li><strong>Initiate a formal co-design consultation</strong> with YAC and community Elders and Rangers to confirm outstation building layouts, culturally significant siting constraints, occupancy demand profiles, and any governance structures that need to be in place before installation commences. This consultation should be structured around Free, Prior and Informed Consent principles.</li>
+              <li><strong>Engage CfAT's Queensland team early</strong> as the training programme delivery partner, given their existing relationship with the Lama Lama community and their institutional expertise in the Bushlight model.</li>
+              <li><strong>Prepare and submit a joint ARENA Remote and Off-Grid Communities grant application</strong> and Queensland First Nations Clean Energy Strategy expression of interest; YAC's governance role as owner will strengthen both applications.</li>
+              <li><strong>Commission a formal site assessment</strong> of outstation buildings to confirm roof structural ratings for the proposed panel loads and cyclone-force wind uplift requirements before finalising component specifications.</li>
+              <li><strong>Engage a certified electrical contractor</strong> experienced in remote Cape York installations with a knowledge-transfer commitment rather than proprietary lock-in.</li>
+            </ol>
           </ScrollReveal>
 
           <ScrollReveal delay={0.08}>
-            <h3>Supporting Recommendations</h3>
+            <h3>Further Research Needed</h3>
             <ol>
-              <li><strong>Apply for ARENA Remote and Off-Grid Communities program funding immediately.</strong> Grants of up to 50% of eligible project costs ($40,000–$60,000) are available and have been awarded to comparable projects (Australian Renewable Energy Agency, 2020). Application should begin in parallel with technical design finalisation.</li>
-              <li><strong>Engage the Centre for Appropriate Technology as technical delivery and training partner.</strong> CfAT's Bushlight program has previously worked with Lama Lama community members (Centre for Appropriate Technology, 2009), providing an existing relationship that reduces engagement overhead.</li>
-              <li><strong>Begin Phase 1 installation during the next dry season.</strong> Phase 1 at the ranger base should be completed before the following wet season to validate the system in real conditions during the period of greatest need.</li>
-              <li><strong>Document Phase 1 performance to support Phase 2 funding applications.</strong> Real performance data — generation output, diesel activation frequency, battery autonomy during cloud cover — significantly strengthens subsequent ARENA and Queensland Government applications.</li>
-              <li><strong>Explore Queensland Government First Nations Clean Energy Strategy funding.</strong> This stream specifically targets remote Indigenous energy projects in Cape York and the Gulf, making it an ideal complement to ARENA support (Independent Australia, 2025).</li>
+              <li>Detailed energy demand profiling per building, including seasonal occupancy variation and medical refrigeration requirements.</li>
+              <li>Hydrological mapping of probable maximum flood levels to confirm battery enclosure and mounting heights.</li>
+              <li>Cultural heritage and ecological sensitivity assessment conducted with Elders and Rangers to identify panel siting restrictions not visible from desktop research.</li>
+              <li>Long-term performance data from ARENA's Northern Territory Solar Energy Transformation Program communities to refine battery sizing and diesel reduction projections for Cape York's specific climate profile.</li>
             </ol>
           </ScrollReveal>
         </div>

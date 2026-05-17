@@ -4,40 +4,28 @@ import ScrollReveal from '@/components/ScrollReveal'
 export default function Appendices() {
   return (
     <div>
-      <SectionHero title="Appendices" subtitle="Group charter, meeting minutes, and AI prompt log for academic integrity compliance." />
-      <div className="px-8 md:px-16 py-12 max-w-3xl">
+      <SectionHero title="Supporting Documentation" subtitle="Group charter, prototype test logs, meeting minutes, and AI prompt log." />
+      <div className="px-8 md:px-14 py-12 max-w-3xl">
         <div className="prose">
           <ScrollReveal>
-            <h3>Appendix A — Group Charter</h3>
-            <div className="placeholder">
-              Paste or link to the group charter here. The charter should include group member names,
-              roles, expected contributions, communication agreements, and how disputes will be resolved.
-            </div>
+            <h3>Appendix 1: Group Charter</h3>
+            <div className="placeholder">Insert group charter here.</div>
           </ScrollReveal>
 
           <ScrollReveal delay={0.06}>
-            <h3>Appendix B — Meeting Minutes</h3>
-            <div className="placeholder">
-              Include minutes from all group meetings. Each set of minutes should record: date, attendees,
-              agenda items discussed, decisions made, and action items with owners and due dates.
-            </div>
-            <div className="infobox">
-              <p className="text-sm font-semibold mb-1" style={{ color: 'var(--pine)' }}>Meeting — [Date]</p>
-              <p className="text-sm mb-2" style={{ color: 'var(--ink-muted)' }}>Attendees: [Names]</p>
-              <ul className="text-sm">
-                <li><strong>Discussed:</strong> [placeholder]</li>
-                <li><strong>Decided:</strong> [placeholder]</li>
-                <li><strong>Action items:</strong> [placeholder]</li>
-              </ul>
-            </div>
+            <h3>Appendix 2: Prototype Test Logs and Additional Images</h3>
+            <div className="placeholder">Insert full prototype test logs, additional photographs, and evaluation results here.</div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.08}>
+            <h3>Appendix 3: Meeting Minutes</h3>
+            <div className="placeholder">Insert meeting minutes here.</div>
           </ScrollReveal>
 
           <ScrollReveal delay={0.1}>
-            <h3>Appendix C — AI Prompt Log</h3>
-            <div className="placeholder">
-              If generative AI tools were used in preparing this report, include a log of all prompts
-              submitted and the responses received, as required by UTS academic integrity policy.
-            </div>
+            <h3>Appendix 4: AI Prompt Log</h3>
+            <p>This document was drafted with the assistance of Claude (Anthropic, claude-sonnet-4-6) acting as a synthesis and drafting tool. The following prompts were submitted:</p>
+            <div className="placeholder">Insert each prompt submitted to the AI tool and a summary of how the response was used or edited in the final report.</div>
           </ScrollReveal>
         </div>
       </div>
