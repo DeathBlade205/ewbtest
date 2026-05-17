@@ -10,6 +10,17 @@ export default function DetailedDesign() {
           <ScrollReveal>
             <h3>System Overview</h3>
             <p>The Distributed Hybrid Microgrid is a self-contained electricity network generating, storing, and distributing power locally with no grid connection. It comprises five subsystems: distributed rooftop PV generation; a centralised LiFePO4 battery bank; a hybrid inverter-charger hub; a diesel generator repositioned as automatic fallback; and a traffic-light monitoring interface.</p>
+            <div className="not-prose my-6">
+              <img
+                src="/fig2-block-diagram.png"
+                alt="High-level functional block diagram: Ranger PV 1.5kW, Kitchen PV 1.0kW, Dwelling PV 0.5kW feeding Charge controller, Battery bank 20kWh LiFePO4, Hybrid inverter 5kW Victron MultiPlus, Distribution board, and outputs to Lighting, Refrigeration, Radio comms. Diesel generator emergency fallback at less than 20% SOC."
+                className="w-full rounded-lg"
+                style={{ border: '1px solid var(--border)' }}
+              />
+              <p className="text-xs italic mt-2 text-center" style={{ color: 'var(--ink-faint)' }}>
+                FIGURE 2: High-level functional block diagram displaying how the solution works
+              </p>
+            </div>
           </ScrollReveal>
 
           <ScrollReveal delay={0.05}>

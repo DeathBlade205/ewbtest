@@ -90,6 +90,17 @@ export default function ExecutiveSummary() {
 
           <ScrollReveal delay={0.08}>
             <h2 className="font-black mb-3" style={{ fontSize: '1.4rem', color: 'var(--forest)', letterSpacing: '-0.02em' }}>Overview of Design</h2>
+            <div className="mb-6">
+              <img
+                src="/fig1-system-architecture.png"
+                alt="System architecture showing distributed rooftop PV panels on Ranger Base, Communal Kitchen, and Dwelling feeding a shared Hybrid Inverter Hub, LFP Battery bank, and Diesel Generator fallback with Traffic Light monitoring display"
+                className="w-full rounded-lg"
+                style={{ border: '1px solid var(--border)' }}
+              />
+              <p className="text-xs italic mt-2 text-center" style={{ color: 'var(--ink-faint)' }}>
+                FIGURE 1: System architecture — distributed rooftop PV panels feeding shared battery bank and hybrid inverter hub with diesel fallback and traffic-light monitoring display
+              </p>
+            </div>
             <ul className="text-sm space-y-2 mb-8" style={{ listStyle: 'none', padding: 0 }}>
               {[
                 'The distributed hybrid microgrid generates 0.5–1.5 kW per building via rooftop mounted PV panels on existing structures (ranger base, communal kitchen, dwellings), feeding a shared 20 kWh LiFePO4 battery bank and hybrid inverter hub.',
