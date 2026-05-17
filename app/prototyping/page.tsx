@@ -12,6 +12,33 @@ export default function Prototyping() {
             <p>The energy system's distributed rooftop PV arrangement was prioritised for prototyping, as roof geometry, panel orientation, and spatial fit across three different building types were the primary unknowns in the design. A physical 1:50 scale model was chosen over digital rendering because it can be handled and understood without technical literacy, making it appropriate for direct presentation to the YAC and Rangers during community consultation.</p>
           </ScrollReveal>
 
+          <ScrollReveal delay={0.04}>
+            <div className="not-prose my-6 grid grid-cols-2 gap-3">
+              <div>
+                <img
+                  src="/prototype-closeup.png"
+                  alt="Close-up of the 1:50 scale prototype showing solar panel modules mounted on a cardboard building roof"
+                  className="w-full rounded-lg"
+                  style={{ border: '1px solid var(--border)' }}
+                />
+                <p className="text-xs italic mt-2 text-center" style={{ color: 'var(--ink-faint)' }}>
+                  Close-up: solar panel modules on roof
+                </p>
+              </div>
+              <div>
+                <img
+                  src="/prototype-overview.png"
+                  alt="Overview of the full 1:50 scale prototype showing three outstation buildings with rooftop PV panels on a sandy base with traffic light display"
+                  className="w-full rounded-lg"
+                  style={{ border: '1px solid var(--border)' }}
+                />
+                <p className="text-xs italic mt-2 text-center" style={{ color: 'var(--ink-faint)' }}>
+                  Full model: Ranger Base, Communal Kitchen, and Dwelling
+                </p>
+              </div>
+            </div>
+          </ScrollReveal>
+
           <ScrollReveal delay={0.06}>
             <h3>Construction</h3>
             <p>The model was constructed at 1:50 scale using laser-cut cardboard for building forms and 3D-printed components for panel modules and mounting brackets, representing the three building types present at the outstation.</p>
