@@ -29,7 +29,7 @@ export default function DetailedDesign() {
 
           <ScrollReveal delay={0.12}>
             <h3>Monitoring Interface</h3>
-            <p>A traffic-light display (green: state-of-charge > 50%; yellow: 20–50%; red: &lt;20%) is mounted at a central community point. The interface requires no technical literacy to interpret and makes system awareness accessible to any community member. Rangers managing the system will receive additional training on the inverter's full monitoring interface, but the traffic-light display ensures the broader community can engage with system health without specialist knowledge.</p>
+            <p>A traffic-light display (green: state-of-charge &gt; 50%; yellow: 20–50%; red: &lt;20%) is mounted at a central community point. The interface requires no technical literacy to interpret and makes system awareness accessible to any community member. Rangers managing the system will receive additional training on the inverter's full monitoring interface, but the traffic-light display ensures the broader community can engage with system health without specialist knowledge.</p>
             <table>
               <thead><tr><th>Light</th><th>Battery Level</th><th>Meaning</th><th>Community Action</th></tr></thead>
               <tbody>
