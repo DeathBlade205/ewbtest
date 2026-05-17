@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Sidebar from '@/components/Sidebar'
 import Header from '@/components/Header'
+import PageNav from '@/components/PageNav'
 
 export const metadata: Metadata = {
   title: 'Lama Lama Country — EWB Challenge 2025',
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Sidebar />
           <main className="flex-1 min-w-0 relative md:ml-56">
             {children}
+            <PageNav />
           </main>
         </div>
       </body>
