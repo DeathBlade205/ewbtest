@@ -62,6 +62,11 @@ export default function Implementation() {
             <h3>Community Ownership and Repairs</h3>
             <p>All assets are owned by YAC from installation. YAC governs expansion, modification, and end-of-life decisions. Rangers perform routine maintenance; component faults are resolved using pre-positioned spares with satellite phone support from CfAT or the installer. Emergency components can be flown in within 24–48 hours. Battery disposal is managed through a certified recycler, with logistics written into the YAC governance framework.</p>
           </ScrollReveal>
+
+          <ScrollReveal delay={0.16}>
+            <h3>Impact on Future Community Workings</h3>
+            <p>By Year 5, the transition fundamentally changes how the outstation functions. Ranger operations, fire management, biodiversity monitoring and emergency response become year-round rather than dry-season-only, as power is no longer dependent on fuel delivery. The removal of diesel resupply as a critical logistics constraint also reduces the community's vulnerability to wet season road closures and frees YAC's budget from recurring fuel costs, redirecting those savings toward community priorities. The governance framework co-developed in Phase 1 gives YAC a documented process for managing energy infrastructure independently, a model that can be extended to other community assets over time.</p>
+          </ScrollReveal>
         </div>
       </div>
     </div>

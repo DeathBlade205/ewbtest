@@ -42,7 +42,7 @@ export default function CostAnalysis() {
 
           <ScrollReveal delay={0.1}>
             <h3>Lifecycle Savings</h3>
-            <p>Bushlight communities reported $5,500/household/year in fuel savings (Independent Australia, 2025), totalling approximately $440,000 over 20 years for a four-building outstation. ARENA grants can cover up to 50% of eligible costs and the Queensland First Nations Clean Energy Strategy targets Cape York specifically (Queensland Government, 2024), reducing net community outlay to $5,300–$27,100.</p>
+            <p>Bushlight communities reported $5,500/household/year in fuel savings (Independent Australia, 2025), totalling approximately $440,000 over 20 years for a four-building outstation, significantly exceeding the capital cost even before grants. After applying available grants, the estimated net community outlay is $5,300–$27,100, against a total installation cost of $62,300–$94,100. ARENA's Remote and Off-Grid Communities program can cover up to 50% of eligible costs, and the Queensland First Nations Clean Energy Strategy targets Cape York specifically (Queensland Government, 2024). A well-governed grant application submitted by YAC as the owner and operator is well-placed to access both funding streams.</p>
           </ScrollReveal>
         </div>
       </div>
