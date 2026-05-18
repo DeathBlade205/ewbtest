@@ -24,7 +24,7 @@ export default function GroupDeclaration() {
                   { label: 'Title',                    value: 'Powering Country: A Distributed Hybrid Microgrid for Lama Lama Outstations' },
                   { label: 'Design Area',              value: '3 — Energy' },
                   { label: 'Project Opportunity',      value: '3.2 Microgrids and hybrid systems for outstations' },
-                  { label: 'How Might We Statement',   value: 'How might we provide reliable, culturally appropriate, and community-governed energy for Lama Lama outstations so that Rangers and Elders can maintain safety-critical services and self-determination on Country?' },
+                  { label: 'Keywords',                 value: 'remote Indigenous energy, solar-battery-diesel microgrid, Cape York outstation, community energy sovereignty, off-grid hybrid system, First Nations clean energy, distributed rooftop solar' },
                   { label: 'Tutorial Number & Zone',   value: 'Tutorial 5 — Mohammed Kassira' },
                   { label: 'Group Name',               value: 'One Prompt Wonders' },
                 ].map(({ label, value }, i) => (

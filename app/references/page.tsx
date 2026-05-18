@@ -18,15 +18,9 @@ export default function References() {
     'Gaonkar, A., Bharathraj, R., Kulkarni, P., & Rao, B. N. (2024). Life cycle testing and reliability analysis of prismatic lithium-iron-phosphate cells. International Journal of Sustainable Energy, 43(1), Article 2337439. https://doi.org/10.1080/14786451.2024.2337439',
     'Hoicka, C. E., Savic, K., & Campney, A. (2021). Reconciliation through renewable energy? A survey of Indigenous communities, involvement, and peoples in Canada. Energy Research & Social Science, 74, 101967. https://doi.org/10.1016/j.erss.2020.101897',
     'Independent Australia. (2025, June 20). How renewable energy is empowering remote Indigenous communities in Australia. Independent Australia. https://independentaustralia.net/about-ia/sponsored-display/how-renewable-energy-is-empowering-remote-indigenous-communities-in-australia,19855',
-    'Indigenous Climate Hub. (2024, October). Renewable energy projects in Indigenous communities: Balancing tradition and innovation. Indigenous Climate Hub. https://indigenousClimatehub.ca/2024/10/renewable-energy-projects-in-indigenous-communities-balancing-tradition-and-innovation/',
-    'International Energy Agency. (2022). Off-grid renewable energy systems for remote communities. IEA. https://www.iea.org',
-    'Lama Lama Aboriginal Corporation. (2024). Lama Lama Country: Our land, our culture. https://www.lamalama.org.au',
-    'Mahmud, M. A., & Roy, T. K. (2025). Electricity supply systems for First Nations communities in remote Australia: Evidence, consumer protections and pathways to energy equity. Energies, 18(19), Article 5130. https://doi.org/10.3390/en18195130',
     'Mani, M., & Pillai, R. (2010). Impact of dust on solar photovoltaic (PV) performance: Research status, challenges and recommendations. Renewable and Sustainable Energy Reviews, 14(9), 3124–3131. https://doi.org/10.1016/j.rser.2010.07.052',
     'Queensland Government. (2024). First Nations clean energy strategy. Department of Energy and Public Works. https://www.energyandclimate.qld.gov.au',
-    'Queensland Government. (2026). Cape York Peninsula (CYP) bioregion: Facts and maps. Department of the Environment, Tourism, Science and Innovation. https://wetlandinfo.detsi.qld.gov.au/wetlands/facts-maps/bioregion-cape-york-peninsula-cyp/',
     'Skoplaki, E., & Palyvos, J. A. (2009). On the temperature dependence of photovoltaic module electrical performance: A review of efficiency/power correlations. Solar Energy, 83(5), 614–624. https://doi.org/10.1016/j.solener.2008.10.008',
-    'Sustainability Directory. (2025, December). How can renewable energy projects engage Indigenous communities? Sustainability Directory. https://energy.sustainability-directory.com/question/how-can-renewable-energy-projects-engage-indigenous-communities/',
   ]
 
   return (

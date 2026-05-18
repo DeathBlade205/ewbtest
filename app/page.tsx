@@ -53,6 +53,9 @@ export default function ExecutiveSummary() {
               </div>
             ))}
           </div>
+          <p className="mt-3 text-xs" style={{ color: 'rgba(255,255,255,0.65)' }}>
+            URL: <a href="https://ewbonepromptwonders.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: 'rgba(255,255,255,0.85)' }}>https://ewbonepromptwonders.vercel.app/</a>
+          </p>
         </div>
       </div>
 
@@ -147,7 +150,6 @@ export default function ExecutiveSummary() {
               <p><strong style={{ color: 'var(--ink)' }}>Estimated total installation cost (Phase 1, 4–6 buildings):</strong> AUD $62,300–$94,100 before grants.</p>
               <p><strong style={{ color: 'var(--ink)' }}>Estimated net community outlay after available grants:</strong> AUD $5,300–$27,100.</p>
               <p><strong style={{ color: 'var(--ink)' }}>Estimated long-term savings:</strong> ~AUD $5,500 per household per year over diesel (Independent Australia, 2025).</p>
-              <p>Full Bill of Materials with sourced pricing is provided in the Cost Analysis section.</p>
             </div>
           </ScrollReveal>
 

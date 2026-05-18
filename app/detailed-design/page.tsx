@@ -41,6 +41,19 @@ export default function DetailedDesign() {
           <ScrollReveal delay={0.12}>
             <h3>Monitoring Interface</h3>
             <p>A traffic-light display (green: state-of-charge &gt; 50%; yellow: 20–50%; red: &lt;20%) is mounted at a central community point. The interface requires no technical literacy to interpret and makes system awareness accessible to any community member. Rangers managing the system will receive additional training on the inverter's full monitoring interface, but the traffic-light display ensures the broader community can engage with system health without specialist knowledge.</p>
+            <div className="not-prose my-6 flex justify-center">
+              <div style={{ maxWidth: 220 }}>
+                <img
+                  src="/fig3-traffic-light.png"
+                  alt="FIGURE 3: Traffic-light monitoring interface — green/yellow/red LED panel with percentage thresholds labelled. Only one light is displayed at a time."
+                  className="w-full rounded-lg"
+                  style={{ border: '1px solid var(--border)' }}
+                />
+                <p className="text-xs italic mt-2 text-center" style={{ color: 'var(--ink-faint)' }}>
+                  FIGURE 3: Traffic-light monitoring interface green/yellow/red LED panel with percentage thresholds labelled (note only one of the lights will actually be displayed at once)
+                </p>
+              </div>
+            </div>
             <table>
               <thead><tr><th>Light</th><th>Battery Level</th><th>Meaning</th><th>Community Action</th></tr></thead>
               <tbody>

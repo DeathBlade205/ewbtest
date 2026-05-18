@@ -7,6 +7,9 @@ import PageNav from '@/components/PageNav'
 export const metadata: Metadata = {
   title: 'Lama Lama Country — EWB Challenge 2025',
   description: '31265 CITP Assessment Task 3 — One Prompt Wonders',
+  icons: {
+    icon: '/favicon-solar.webp',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
