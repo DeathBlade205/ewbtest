@@ -3,12 +3,12 @@ import ScrollReveal from '@/components/ScrollReveal'
 
 export default function GroupDeclaration() {
   const members = [
-    { name: 'Luc Le Moenic',   contribution: 'Identified the problem statement and investigated the project context and possible opportunities for solution designs.' },
-    { name: 'Ronit Jain',      contribution: 'Identified the design criteria based on the user needs and problem statement.' },
-    { name: 'Khushi Sharma',   contribution: 'Developed the design justification and phased implementation timeline, ensuring the system aligns with all design criteria.' },
-    { name: 'Alex Chen',       contribution: 'Designed the solution architecture and researched appropriate technology for deployment in Lama Lama Country.' },
-    { name: 'Sadat Sagar',     contribution: 'Created website.' },
-    { name: 'Mitchell Harris', contribution: 'Investigated the economic factors impacting energy systems at the outstations.' },
+    { name: 'Luc Le Moenic',   contribution: 'Completed sections relating to implementation planning, report editing, and consistency checks across the website and written report.' },
+    { name: 'Ronit Jain',      contribution: 'Worked on design solution options, cost analysis and other considerations.' },
+    { name: 'Khushi Sharma',   contribution: 'Helped develop the prototype and completed annotations and description, worked on the implementation plan.' },
+    { name: 'Alex Chen',       contribution: 'Wrote prototype section, performed prototype testing and took meeting minutes, worked on cost analysis.' },
+    { name: 'Sadat Sagar',     contribution: 'Created website, helped with diagrams and modelling.' },
+    { name: 'Mitchell Harris', contribution: 'Landing Page, Project details section, Background section.' },
   ]
 
   return (
@@ -22,7 +22,7 @@ export default function GroupDeclaration() {
               <div className="rounded-xl overflow-hidden" style={{ border: '1px solid var(--border)' }}>
                 {[
                   { label: 'Title',                    value: 'Powering Country: A Distributed Hybrid Microgrid for Lama Lama Outstations' },
-                  { label: 'Design Area',              value: '3.3 — Energy' },
+                  { label: 'Design Area',              value: '3 — Energy' },
                   { label: 'Project Opportunity',      value: '3.2 Microgrids and hybrid systems for outstations' },
                   { label: 'How Might We Statement',   value: 'How might we provide reliable, culturally appropriate, and community-governed energy for Lama Lama outstations so that Rangers and Elders can maintain safety-critical services and self-determination on Country?' },
                   { label: 'Tutorial Number & Zone',   value: 'Tutorial 5 — Mohammed Kassira' },
@@ -39,7 +39,7 @@ export default function GroupDeclaration() {
 
           <ScrollReveal delay={0.06}>
             <p className="text-sm" style={{ color: 'var(--ink-muted)' }}>
-              The following table declares each group member's individual contribution to this project. All members confirm that the work submitted is their own, that any use of AI tools has been disclosed in Appendix 4, and that all sources are cited in accordance with APA 7th edition referencing guidelines.
+              The following table declares each group member's individual contribution to this project. All members confirm that the work submitted is their own, that any use of AI tools has been disclosed in the AI Prompt Log, and that all sources are cited in accordance with APA 7th edition referencing guidelines.
             </p>
           </ScrollReveal>
 

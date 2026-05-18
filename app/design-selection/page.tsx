@@ -4,7 +4,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export default function DesignSelection() {
   return (
     <div>
-      <SectionHero num="04" title="Design Selection" subtitle="Weighted decision matrix comparing three design options against five criteria. Ratings 1–5 (5 = optimal). Distributed Rooftop selected." />
+      <SectionHero num="05" title="Design Selection" subtitle="Weighted decision matrix comparing three design options against five criteria. Ratings 1–5 (5 = optimal). Distributed Rooftop selected." />
       <div className="px-8 md:px-14 py-12 max-w-3xl">
         <div className="prose">
           <ScrollReveal>
@@ -40,7 +40,7 @@ export default function DesignSelection() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.08}>
-            <h3>4.4 Justification for Distributed Rooftop (Option B)</h3>
+            <h3>Justification for Distributed Rooftop (Option B)</h3>
             <p>The Distributed Rooftop option scores 5 on both Viability and Competency: rooftop distribution localises faults, diesel fallback guarantees wet season continuity, and the Bushlight-proven training model confirms local maintainability (Independent Australia, 2025). With a weighted score of 72 against 40 and 36, the Distributed Rooftop with Shared Battery and Diesel Fallback is selected as the only option satisfying all five criteria simultaneously.</p>
             <p>Option A (Centralised Ground-Mount) scores 1 on Desirability and Competency — it requires vegetation clearance on Country (irresolvable against Criterion 4) and creates a single point of failure. Option C (Per-Building Standalone) scores 1 on Desirability and Competency — no fallback during extended cloud cover risks safety-critical outages, and multiple independent fault points exceed realistic community management capacity.</p>
           </ScrollReveal>

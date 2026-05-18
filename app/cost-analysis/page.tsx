@@ -4,7 +4,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export default function CostAnalysis() {
   return (
     <div>
-      <SectionHero num="08" title="Cost Analysis" subtitle="Full bill of materials, funding pathway, and lifecycle savings. All costs in AUD. Phase 1, 4–6 buildings." />
+      <SectionHero num="09" title="Cost Analysis" subtitle="Full bill of materials, funding pathway, and lifecycle savings. All costs in AUD. Phase 1, 4–6 buildings." />
       <div className="px-8 md:px-14 py-12 max-w-3xl">
         <div className="prose">
           <ScrollReveal>
@@ -23,7 +23,7 @@ export default function CostAnalysis() {
                   <tr><td>Hybrid inverter-charger (5 kW, Victron MultiPlus or equiv.)</td><td>1 unit</td><td>$3,500–$5,000</td><td>Supplier quote</td></tr>
                   <tr><td>Rooftop mounting hardware (cyclone-rated, marine grade)</td><td>Lump sum</td><td>$4,000–$6,000</td><td>EWB, 2025b</td></tr>
                   <tr><td>Traffic-light monitoring display unit</td><td>1 unit</td><td>$800–$1,200</td><td>Custom / off-shelf</td></tr>
-                  <tr><td>Cabling, conduit, circuit protection (marine grade)</td><td>Lump sum</td><td>$3,000–$5,000</td><td>EWB, 2025e; Gaonkar et al., 2024</td></tr>
+                  <tr><td>Cabling, conduit, circuit protection (marine grade)</td><td>Lump sum</td><td>$3,000–$5,000</td><td>EWB, 2025d; Gaonkar et al., 2024</td></tr>
                   <tr><td>Battery enclosure with passive ventilation</td><td>1 unit</td><td>$2,000–$3,500</td><td>Gaonkar et al., 2024</td></tr>
                   <tr><td>Freight (light aircraft / barge / 4WD logistics)</td><td>Lump sum</td><td>$8,000–$15,000</td><td>EWB, 2025</td></tr>
                   <tr><td>Installation labour (certified sparky + community)</td><td>10–15 days</td><td>$12,000–$18,000</td><td>Industry estimate</td></tr>

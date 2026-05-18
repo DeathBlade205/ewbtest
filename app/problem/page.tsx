@@ -4,7 +4,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export default function Problem() {
   return (
     <div>
-      <SectionHero num="02" title="Problem Description" subtitle="The user need statement, root causes, and five design criteria developed from community context, environmental conditions, and technical requirements." />
+      <SectionHero num="03" title="Problem Description" subtitle="The user need statement, root causes, and five design criteria developed from community context, environmental conditions, and technical requirements." />
       <div className="px-8 md:px-14 py-12 max-w-3xl">
 
         <ScrollReveal>
@@ -24,7 +24,7 @@ export default function Problem() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.08}>
-            <h3>3.1 Design Criteria</h3>
+            <h3>Design Criteria</h3>
             <p>Five criteria were developed through synthesis of community context, environmental conditions, and technical requirements.</p>
           </ScrollReveal>
 

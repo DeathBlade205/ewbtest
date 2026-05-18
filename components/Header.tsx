@@ -14,18 +14,11 @@ export default function Header() {
       }}
     >
       <Link href="/" className="flex items-center gap-3 no-underline">
-        <div
-          className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0"
-          style={{ background: 'var(--pine)' }}
-        >
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-            <path d="M3 13 Q9 5 15 13" stroke="rgba(74,222,128,0.9)" strokeWidth="1.6" fill="none" strokeLinecap="round" />
-            <circle cx="9" cy="13" r="2" fill="rgba(74,222,128,0.85)" />
-            <line x1="9" y1="5.5" x2="9" y2="8" stroke="rgba(74,222,128,0.55)" strokeWidth="1.2" strokeLinecap="round" />
-            <line x1="5" y1="8" x2="6.4" y2="9.4" stroke="rgba(74,222,128,0.45)" strokeWidth="1.1" strokeLinecap="round" />
-            <line x1="13" y1="8" x2="11.6" y2="9.4" stroke="rgba(74,222,128,0.45)" strokeWidth="1.1" strokeLinecap="round" />
-          </svg>
-        </div>
+        <img
+          src="/ewbwebsitefavicon.png"
+          alt="EWB One Prompt Wonders logo"
+          className="w-8 h-8 shrink-0"
+        />
         <div>
           <p className="font-bold text-sm leading-tight" style={{ color: 'var(--forest)' }}>
             Lama Lama Country

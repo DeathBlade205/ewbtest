@@ -4,16 +4,17 @@ import ScrollReveal from '@/components/ScrollReveal'
 import Link from 'next/link'
 
 const SECTIONS = [
-  { num: '01', title: 'Background',            href: '/background' },
-  { num: '02', title: 'Problem Description',   href: '/problem' },
-  { num: '03', title: 'Design Options',        href: '/design-options' },
-  { num: '04', title: 'Design Selection',      href: '/design-selection' },
-  { num: '05', title: 'Detailed Design',       href: '/detailed-design' },
-  { num: '06', title: 'Prototyping',           href: '/prototyping' },
-  { num: '07', title: 'Implementation',        href: '/implementation' },
-  { num: '08', title: 'Cost Analysis',         href: '/cost-analysis' },
-  { num: '09', title: 'Other Considerations',  href: '/other-considerations' },
-  { num: '10', title: 'Recommendations',       href: '/recommendations' },
+  { num: '01', title: 'Project Details',       href: '/project-details' },
+  { num: '02', title: 'Background',            href: '/background' },
+  { num: '03', title: 'Problem Description',   href: '/problem' },
+  { num: '04', title: 'Design Options',        href: '/design-options' },
+  { num: '05', title: 'Design Selection',      href: '/design-selection' },
+  { num: '06', title: 'Detailed Design',       href: '/detailed-design' },
+  { num: '07', title: 'Prototyping',           href: '/prototyping' },
+  { num: '08', title: 'Implementation',        href: '/implementation' },
+  { num: '09', title: 'Cost Analysis',         href: '/cost-analysis' },
+  { num: '10', title: 'Other Considerations',  href: '/other-considerations' },
+  { num: '11', title: 'Recommendations',       href: '/recommendations' },
 ]
 
 export default function ExecutiveSummary() {
@@ -42,7 +43,7 @@ export default function ExecutiveSummary() {
           </p>
           <div className="flex flex-wrap gap-2 text-xs">
             {[
-              { label: 'Design Area', value: '3.3 — Energy' },
+              { label: 'Design Area', value: '3 — Energy' },
               { label: 'Project Opportunity', value: '3.2 Microgrids & Hybrid Systems' },
               { label: 'Tutorial', value: 'Tutorial 5 — Mohammed Kassira' },
               { label: 'Group', value: 'One Prompt Wonders' },
@@ -69,7 +70,7 @@ export default function ExecutiveSummary() {
           <ScrollReveal delay={0.04}>
             <h2 className="font-black mb-3" style={{ fontSize: '1.4rem', color: 'var(--forest)', letterSpacing: '-0.02em' }}>Proposal Summary</h2>
             <p className="text-sm leading-relaxed mb-8" style={{ color: 'var(--ink-muted)' }}>
-              The project aims to eliminate the Lama Lama outstations' dependence on diesel generators through a distributed hybrid microgrid combining rooftop solar panels, a shared battery bank, a hybrid inverter hub, and an automatically activated diesel fallback. The system is designed to be expanded, repaired, and governed entirely by the Yintjingga Aboriginal Corporation (YAC) and the Lama Lama community, achieving energy sovereignty alongside energy security. A five-year staged diesel transition ensures the community is never left exposed to any risks during implementation.
+              The project aims to address the Lama Lama outstations' dependence on diesel generators through a distributed hybrid microgrid combining rooftop solar panels, a shared battery bank, a hybrid inverter hub, and an automatically activated diesel fallback. The system is designed to be expanded, repaired, and governed entirely by the Yintjingga Aboriginal Corporation (YAC) and the Lama Lama community, achieving energy sovereignty alongside energy security. A five-year staged diesel transition ensures the community is never left exposed to any risks during the implementation.
             </p>
           </ScrollReveal>
 

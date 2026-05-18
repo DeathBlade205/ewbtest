@@ -7,6 +7,7 @@ const ORDER = [
   { href: '/acknowledgement',      label: 'Acknowledgement' },
   { href: '/group-declaration',    label: 'Group Declaration' },
   { href: '/',                     label: 'Executive Summary' },
+  { href: '/project-details',      label: 'Project Details' },
   { href: '/background',           label: 'Background' },
   { href: '/problem',              label: 'Problem Description' },
   { href: '/design-options',       label: 'Design Options' },
@@ -18,7 +19,9 @@ const ORDER = [
   { href: '/other-considerations', label: 'Other Considerations' },
   { href: '/recommendations',      label: 'Recommendations' },
   { href: '/references',           label: 'References' },
-  { href: '/appendices',           label: 'Appendices' },
+  { href: '/group-charter',        label: 'Group Charter' },
+  { href: '/meeting-minutes',      label: 'Meeting Minutes' },
+  { href: '/ai-prompt-log',        label: 'AI Prompt Log' },
 ]
 
 export default function PageNav() {
