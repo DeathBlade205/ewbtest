@@ -4,7 +4,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export default function Recommendations() {
   return (
     <div>
-      <SectionHero num="10" title="Recommendations" subtitle="Actions for the Yintjingga Aboriginal Corporation, EWB, and further research required before implementation." />
+      <SectionHero num="11" title="Recommendations" subtitle="Actions for the Yintjingga Aboriginal Corporation, EWB, and further research required before implementation." />
       <div className="px-8 md:px-14 py-12 max-w-3xl">
         <div className="prose">
           <ScrollReveal>

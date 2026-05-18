@@ -8,12 +8,12 @@ const SECTIONS = [
   { num: '02', title: 'Problem Description',   href: '/problem' },
   { num: '03', title: 'Design Options',        href: '/design-options' },
   { num: '04', title: 'Design Selection',      href: '/design-selection' },
-  { num: '05', title: 'Detailed Design',       href: '/detailed-design' },
-  { num: '06', title: 'Prototyping',           href: '/prototyping' },
-  { num: '07', title: 'Implementation',        href: '/implementation' },
-  { num: '08', title: 'Cost Analysis',         href: '/cost-analysis' },
-  { num: '09', title: 'Other Considerations',  href: '/other-considerations' },
-  { num: '10', title: 'Recommendations',       href: '/recommendations' },
+  { num: '06', title: 'Detailed Design',       href: '/detailed-design' },
+  { num: '07', title: 'Prototyping',           href: '/prototyping' },
+  { num: '08', title: 'Implementation',        href: '/implementation' },
+  { num: '09', title: 'Cost Analysis',         href: '/cost-analysis' },
+  { num: '10', title: 'Other Considerations',  href: '/other-considerations' },
+  { num: '11', title: 'Recommendations',       href: '/recommendations' },
 ]
 
 export default function ExecutiveSummary() {
@@ -42,7 +42,7 @@ export default function ExecutiveSummary() {
           </p>
           <div className="flex flex-wrap gap-2 text-xs">
             {[
-              { label: 'Design Area', value: '3.3 — Energy' },
+              { label: 'Design Area', value: '3. Energy' },
               { label: 'Project Opportunity', value: '3.2 Microgrids & Hybrid Systems' },
               { label: 'Tutorial', value: 'Tutorial 5 — Mohammed Kassira' },
               { label: 'Group', value: 'One Prompt Wonders' },
@@ -52,6 +52,9 @@ export default function ExecutiveSummary() {
               </div>
             ))}
           </div>
+          <p className="mt-3 text-xs" style={{ color: 'rgba(255,255,255,0.65)' }}>
+            URL: <a href="https://ewbonepromptwonders.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: 'rgba(255,255,255,0.85)' }}>https://ewbonepromptwonders.vercel.app/</a>
+          </p>
         </div>
       </div>
 
@@ -146,7 +149,6 @@ export default function ExecutiveSummary() {
               <p><strong style={{ color: 'var(--ink)' }}>Estimated total installation cost (Phase 1, 4–6 buildings):</strong> AUD $62,300–$94,100 before grants.</p>
               <p><strong style={{ color: 'var(--ink)' }}>Estimated net community outlay after available grants:</strong> AUD $5,300–$27,100.</p>
               <p><strong style={{ color: 'var(--ink)' }}>Estimated long-term savings:</strong> ~AUD $5,500 per household per year over diesel (Independent Australia, 2025).</p>
-              <p>Full Bill of Materials with sourced pricing is provided in the Cost Analysis section.</p>
             </div>
           </ScrollReveal>
 

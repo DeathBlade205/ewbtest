@@ -4,7 +4,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export default function Prototyping() {
   return (
     <div>
-      <SectionHero num="06" title="Prototyping" subtitle="A labelled system architecture diagram built in Canva, tested through three internal group review sessions." />
+      <SectionHero num="07" title="Prototyping" subtitle="A labelled system architecture diagram built in Canva, tested through three internal group review sessions." />
       <div className="px-8 md:px-14 py-12 max-w-3xl">
         <div className="prose">
 
@@ -13,50 +13,11 @@ export default function Prototyping() {
             <p>A working physical prototype of the full microgrid was not feasible within the project scope or geography, and the individual components (monocrystalline PV panels, LiFePO4 batteries, hybrid inverters) are commercially mature and already proven in remote Australian deployments through ARENA's SETuP program and CfAT's Bushlight Project (Independent Australia, 2025). The aspect of the design that required prototyping was the system architecture: how the five subsystems connect, where power and signal flow, and where the community-facing interface sits in relation to the back-end equipment. This is also the artefact that will be presented to YAC during co-design consultation, so it needed to be readable by stakeholders without an engineering background.</p>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.04}>
-            <div className="not-prose my-6 grid grid-cols-2 gap-3">
-              <div>
-                <img
-                  src="/prototype-closeup.png"
-                  alt="Close-up of the physical scale model showing solar panel modules mounted on a cardboard building roof"
-                  className="w-full rounded-lg"
-                  style={{ border: '1px solid var(--border)' }}
-                />
-                <p className="text-xs italic mt-2 text-center" style={{ color: 'var(--ink-faint)' }}>
-                  Physical scale model — rooftop PV close-up
-                </p>
-              </div>
-              <div>
-                <img
-                  src="/prototype-overview.png"
-                  alt="Overview of the full physical scale model showing three outstation buildings with rooftop PV panels"
-                  className="w-full rounded-lg"
-                  style={{ border: '1px solid var(--border)' }}
-                />
-                <p className="text-xs italic mt-2 text-center" style={{ color: 'var(--ink-faint)' }}>
-                  Physical scale model — full outstation layout
-                </p>
-              </div>
-            </div>
-          </ScrollReveal>
-
           <ScrollReveal delay={0.06}>
             <h3>Construction and Function</h3>
             <p>The prototype was constructed as a labelled diagram made with Canva and their in-built elements. Each subsystem is represented at its real-world location, arrows are annotated with the form and direction of flow (<em>Solar DC</em>, <em>Backup AC</em>, <em>Charge / Discharge</em>, <em>Charge state signal</em>, <em>240 V AC to Outstation</em>), and capacity figures appear directly on the components so the diagram doubles as a high-level specification. The full prototype is shown below in Figure 4, complemented by Figure 2 (functional block diagram) and Figure 3 (traffic-light interface mock-up). Table 2 maps the visual elements to the design decisions they communicate.</p>
 
-            <div className="not-prose my-6">
-              <img
-                src="/fig1-system-architecture.png"
-                alt="FIGURE 4: System architecture block diagram — distributed rooftop PV panels on Ranger Base, Communal Kitchen, and Dwelling feeding shared battery bank, hybrid inverter hub, diesel fallback and traffic-light monitoring display"
-                className="w-full rounded-lg"
-                style={{ border: '1px solid var(--border)' }}
-              />
-              <p className="text-xs italic mt-2 text-center" style={{ color: 'var(--ink-faint)' }}>
-                FIGURE 4: System architecture block diagram distributed rooftop PV panels feeding shared battery bank and hybrid inverter hub with diesel fallback and monitoring display
-              </p>
-            </div>
-
-            <div className="not-prose overflow-x-auto mb-2">
+            <div className="not-prose overflow-x-auto mb-6">
               <table className="matrix" style={{ minWidth: 500 }}>
                 <thead>
                   <tr><th>Visual element</th><th>Design decision communicated</th><th>Criterion addressed</th></tr>
@@ -85,6 +46,18 @@ export default function Prototyping() {
                 </tbody>
               </table>
               <p className="text-xs italic mt-2" style={{ color: 'var(--ink-faint)' }}>Table 2: Mapping of prototype visual elements to design decisions and criteria.</p>
+            </div>
+
+            <div className="not-prose my-6">
+              <img
+                src="/fig1-system-architecture.png"
+                alt="FIGURE 4: System architecture block diagram — distributed rooftop PV panels on Ranger Base, Communal Kitchen, and Dwelling feeding shared battery bank, hybrid inverter hub, diesel fallback and traffic-light monitoring display"
+                className="w-full rounded-lg"
+                style={{ border: '1px solid var(--border)' }}
+              />
+              <p className="text-xs italic mt-2 text-center" style={{ color: 'var(--ink-faint)' }}>
+                FIGURE 4: System architecture block diagram distributed rooftop PV panels feeding shared battery bank and hybrid inverter hub with diesel fallback and monitoring display
+              </p>
             </div>
           </ScrollReveal>
 

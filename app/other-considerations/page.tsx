@@ -4,7 +4,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export default function OtherConsiderations() {
   return (
     <div>
-      <SectionHero num="09" title="Other Considerations" subtitle="Community reaction, journey map, and the anticipated arc from cautious interest to confident ownership." />
+      <SectionHero num="10" title="Other Considerations" subtitle="Community reaction, journey map, and the anticipated arc from cautious interest to confident ownership." />
       <div className="px-8 md:px-14 py-12 max-w-3xl">
         <div className="prose">
           <ScrollReveal>
