@@ -39,7 +39,7 @@ export default function GroupDeclaration() {
 
           <ScrollReveal delay={0.06}>
             <p className="text-sm" style={{ color: 'var(--ink-muted)' }}>
-              The following table declares each group member's individual contribution to this project. All members confirm that the work submitted is their own, that any use of AI tools has been disclosed in the AI Prompt Log, and that all sources are cited in accordance with APA 7th edition referencing guidelines.
+              The following table declares each group member's individual contribution to this project. All members confirm that the work submitted is their own, that any use of AI tools has been disclosed in Appendix 3: AI Prompt Log, and that all sources are cited in accordance with APA 7th edition referencing guidelines.
             </p>
           </ScrollReveal>
 

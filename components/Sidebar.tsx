@@ -19,9 +19,9 @@ const NAV = [
   { href: '/other-considerations', label: 'Other Considerations',  num: '10',  group: 'Report' },
   { href: '/recommendations',      label: 'Recommendations',       num: '11',  group: 'Report' },
   { href: '/references',           label: 'References',            num: null,  group: 'End Matter' },
-  { href: '/group-charter',        label: 'Group Charter',         num: null,  group: 'End Matter' },
-  { href: '/meeting-minutes',      label: 'Meeting Minutes',       num: null,  group: 'End Matter' },
-  { href: '/ai-prompt-log',        label: 'AI Prompt Log',         num: null,  group: 'End Matter' },
+  { href: '/group-charter',        label: 'Appendix 1: Group Charter',    num: null,  group: 'End Matter' },
+  { href: '/meeting-minutes',      label: 'Appendix 2: Meeting Minutes',  num: null,  group: 'End Matter' },
+  { href: '/ai-prompt-log',        label: 'Appendix 3: AI Prompt Log',    num: null,  group: 'End Matter' },
 ]
 
 export default function Sidebar() {

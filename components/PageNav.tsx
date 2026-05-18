@@ -19,9 +19,9 @@ const ORDER = [
   { href: '/other-considerations', label: 'Other Considerations' },
   { href: '/recommendations',      label: 'Recommendations' },
   { href: '/references',           label: 'References' },
-  { href: '/group-charter',        label: 'Group Charter' },
-  { href: '/meeting-minutes',      label: 'Meeting Minutes' },
-  { href: '/ai-prompt-log',        label: 'AI Prompt Log' },
+  { href: '/group-charter',        label: 'Appendix 1: Group Charter' },
+  { href: '/meeting-minutes',      label: 'Appendix 2: Meeting Minutes' },
+  { href: '/ai-prompt-log',        label: 'Appendix 3: AI Prompt Log' },
 ]
 
 export default function PageNav() {

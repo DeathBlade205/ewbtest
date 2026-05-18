@@ -4,7 +4,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export default function GroupCharter() {
   return (
     <div>
-      <SectionHero title="Group Charter" subtitle="Ground rules, goals, leadership, and the team's commitment to working together as One Prompt Wonders." />
+      <SectionHero title="Appendix 1: Group Charter" subtitle="Ground rules, goals, leadership, and the team's commitment to working together as One Prompt Wonders." />
       <div className="px-8 md:px-14 py-12 max-w-3xl">
         <div className="prose">
           <ScrollReveal>

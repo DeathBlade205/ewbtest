@@ -4,7 +4,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export default function MeetingMinutes() {
   return (
     <div>
-      <SectionHero title="Meeting Minutes" subtitle="Three structured prototype-review sessions tracking iteration of the system architecture diagram from Version 1 to Version 4." />
+      <SectionHero title="Appendix 2: Meeting Minutes" subtitle="Three structured prototype-review sessions tracking iteration of the system architecture diagram from Version 1 to Version 4." />
       <div className="px-8 md:px-14 py-12 max-w-3xl">
         <div className="prose">
           <ScrollReveal>
